@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+ .stopwatch{
+   width: 23vw;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 10px;
+ }
+  .timeDisplay{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .buttons{
+    margin-top:20px;
+ 
+
+  }
+
+  .btn{
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    background-color: var(--clr);
+    padding: 12px 24px;
+    margin-inline: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }

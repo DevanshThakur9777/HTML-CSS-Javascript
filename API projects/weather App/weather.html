@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter your City Name" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass-location"></i></button>
+        </div>
+
+        <div class="err">
+       <img src="https://img.freepik.com/premium-vector/winter-version-404-found-concepts-vector-illustration-landing-page_929545-227.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        </div>
+
+        <div class="weather">
+            <img src="https://previews.123rf.com/images/wenchiawang/wenchiawang1509/wenchiawang150901849/45408060-rainy-cloud-doodle.jpg" class="weather-icon">
+            <h1 class="temp">22°C </h1>
+            <h2 class="city">New York</h2>
+             <div class="details">
+                <div class="col">
+                    <img src="https://img.freepik.com/premium-vector/humidity-flat-illustration_120816-21184.jpg">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+             <div class="col">
+                    <img src="https://i.pinimg.com/564x/9b/5d/2d/9b5d2d36b05b38f5147e9a2ede23ea1c.jpg">
+                    <div>
+                        <p class="wind">15 km/hr</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
