@@ -26,7 +26,7 @@
  }
 
        addBtn.addEventListener("click",()=>{ //when clicked addbtn then it called 2 function.
-       addTask(inputTxt);
+         addTask(inputTxt);
          removeBtnFunction();
       });
 
@@ -34,7 +34,7 @@
         let allBtn= document.querySelectorAll(".removeBtn");
      allBtn.forEach(btn=>{      
         btn.addEventListener("click",()=>{                  
-            btn.parentElement.remove();
+          btn.parentElement.remove();
            });    
          });
              
