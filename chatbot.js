@@ -1,4 +1,4 @@
-   let prompt = document.querySelector("#prompt");
+  let prompt = document.querySelector("#prompt");
    let submitBtn = document.querySelector("#submit");
    let imgBtn = document.querySelector("#image");
    let img = document.querySelector("#image img");
@@ -36,7 +36,6 @@
       try {
                let response = await fetch(api_url, RequestOption);
            let data = await response.json();
-                      console.log(data);
 
            let apiResponse =  data.candidates[0].content.parts[0].text.trim();     
      text.innerHTML = apiResponse; //here change p content into API response
@@ -100,7 +99,6 @@
          if(!file) return // if file is null
           let reader = new FileReader(); //this is obeject of file reader
           reader.onload=(e)=>{  
-            console.log(e);
                       
             let base64String = e.target.result.split(",")[1]  // it convert the data into bas64 format & it split the string based on (,) on the first index
                 user.file = {
@@ -117,17 +115,19 @@
 
     })
 
+
       //Close chatBox
-   let closeBtn = document.querySelector("#closebtn");
-    closeBtn.addEventListener("click",()=>{
-      mainBox.classList.toggle("closeChat");
-         openChat.style.display = "block";
+let closeBtn = document.querySelector("#closebtn img");
+closeBtn.addEventListener("click", () => {
+    mainBox.classList.add("closeChat");   // chat page hide
+    openChat.style.display = "flex";      // welcome message & open button show
+});
 
-    })
 
-       //Open Chatbox
-    openChat.addEventListener("click",()=>{
-   openChat.style.display = "none";
-      mainBox.classList.toggle("closeChat");
-    })
+  //open chatBox
+let openBtn = document.querySelector(".open");
+openBtn.addEventListener("click", () => {
+    openChat.style.display = "none";      // welcome message hide
+    mainBox.classList.remove("closeChat"); // chat page show
+});
    
